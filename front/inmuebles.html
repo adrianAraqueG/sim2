@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.Juan Inmobiliaria</title>
+    <link rel="stylesheet" href="./assets/style.css">
+
+
+    <!-- BOOTSTRAP BY CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="container-fluid mh-100 p-0">
+
+        <!-- HEADER SECTION -->
+        <header class="container-fluid bgc-char">
+
+            <!-- NAVBAR -->
+            <div class="container">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./assets/img/edificio.png" width="40">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ms-auto">
+                                <a class="nav-link" href="./index.html">Inicio</a>
+                                <a class="nav-link active" href="./inmuebles.html">Gestión</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+
+
+
+        <!-- SHOW FLATS -->
+        <h6 class="fs-2 text-center mt-3">Gestionar Inmuebles</h6>
+        <section class="container mt-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card m-auto mb-3 shadow" style="width: 18rem;">
+                        <div class="mt-2 mb-2 d-flex justify-content-center flex-column align-items-center mt-3">
+                            <img src="./assets/img/casa-icono-2.png" width="150px" alt="inmueble-imagen">
+                        </div>
+                        <hr class="mb-0">
+                        <div class="card-body bgc-caro">
+                            <h5 class="card-title fs-5 mb-0">Desde $750.000 <span class="divisa">cop</span></h5>
+                            <p class="fs-6 mb-3">52mt² | 3 ha. • 2 ba.</p>
+                            <img src="./assets/img/clear.png" alt="" width="50px"><span class="divisa">20° C</span>
+                            <p class="fs-6 mb-0">Avenida 113 # 33-55</p>
+                            <span class="divisa">Bogotá, Cundinamarca.</span></h5>
+                            <div class="align-self-end me-2">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#abrir-modal"><i
+                                        class="bi bi-house-gear-fill fs-4 text-secondary me-1"></i></a>
+                                <a href=""><i class="bi bi-house-dash-fill fs-4 text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card m-auto mb-3 shadow" style="width: 18rem;">
+                        <div class="mt-2 mb-2 d-flex justify-content-center flex-column align-items-center mt-3">
+                            <img src="./assets/img/edificio-icono-2.png" width="116px" alt="inmueble-imagen">
+                        </div>
+                        <hr class="mb-0">
+                        <div class="card-body bgc-caro">
+                            <h5 class="card-title fs-5 mb-0">Desde $900.000 <span class="divisa">cop</span></h5>
+                            <p class="fs-6 mb-3">52mt² | 3 ha. • 2 ba.</p>
+                            <img src="./assets/img/mist.png" alt="" width="50px"><span class="divisa">20° C</span>
+                            <p class="fs-6 mb-0">Avenida 113 # 33-55</p>
+                            <span class="divisa">Medellín, Antioquia.</span></h5>
+                            <div class="me-2">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#abrir-modal"><i
+                                        class="bi bi-house-gear-fill fs-4 text-secondary me-1"></i></a>
+                                <a href=""><i class="bi bi-house-dash-fill fs-4 text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col d-flex justify-content-center align-items-center">
+                    <!-- ADD BUTTON -->
+                    <a class="m-auto d-flex justify-content-center align-items-center" href="" data-bs-toggle="modal"
+                        data-bs-target="#abrir-modal">
+                        <div class="add-house">
+                            <i class="bi bi-house-add-fill"></i>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <hr>
+        <h6 class="text-center mb-3">Campus Inmuebles 2023</h6>
+    </footer>
+
+
+    <!-- MODAL EDIT / ADD -->
+    <div class="modal fade" id="abrir-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="abrir-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button id="cerrar-modal" type="button" class="btn-close --btn-m-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="./assets/img/casa-paisaje.jpg" width="200px" alt="">
+                        <h6 class="fs-4">Añadir Inmueble</h6>
+                    </div>
+
+                    <form action="" class="form-control border-none p-0" id="form">
+
+                        <select class="form-select mt-4" id="categoria">
+                            <option value="" selected disabled>Categoria</option>
+                            <option value="Casa">Casa</option>
+                            <option value="Apartamento">Apartamento</option>
+                        </select>
+                        <input id="precio" type="number" class="form-control mt-2" required placeholder="Precio">
+                        <input id="habitaciones" type="number" class="form-control mt-2" required
+                            placeholder="N° Habitaciones">
+                        <input id="banos" type="text" class="form-control mt-2" required placeholder="N° Baños">
+                        <input id="metros" type="text" class="form-control mt-2" required placeholder="M²">
+                        <input id="direccion" type="text" class="form-control mt-2" required placeholder="Dirección">
+                        <input id="ciudad" type="text" class="form-control mt-2" required placeholder="Ciudad">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="nuevaCiudad">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Nueva Ciudad
+                            </label>
+                        </div>
+                        <input id="departamento" type="text" class="form-control mt-2" required
+                            placeholder="Departamento">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="nuevoDepartamento">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Nuevo Departamento
+                            </label>
+
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-success p-2" type="submit" id="form-button">Añadir</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>

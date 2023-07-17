@@ -1,0 +1,53 @@
+/**
+* PALETA
+*/
+.bgc-lapiz{
+    background-color: #33658A;
+}
+
+.bgc-caro{
+    background-color: #e5e5e5;
+}
+
+.bgc-char{
+    background-color: #2F4858;
+}
+
+.bgc-yell{
+    background-color: #F6AE2D;
+}
+
+.bgc-oran{
+    background-color: #F26419;
+}
+
+.mh-100{
+    min-height: 100vh;
+}
+
+.add-house{
+    font-size: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    border-style: dashed;
+    margin: 10px;
+}
+
+.card-shadow{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.border-none{
+    border: none !important;
+}
+
+.--btn-m-close{
+    margin-left: 95% !important;
+}
+
+.divisa{
+    display: inline-block;
+    font-weight: 700 !important;
+    font-size: 15px;
+    color:#2F4858
+}
