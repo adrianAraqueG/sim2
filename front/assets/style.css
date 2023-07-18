@@ -25,16 +25,28 @@
     min-height: 100vh;
 }
 
-.add-house{
+.add-city{
     font-size: 100px;
-    padding: 20px;
+    margin: 10px;
+}
+
+.add-dep{
+    font-size: 50px;
+    width: auto;
     border-radius: 20px;
-    border-style: dashed;
     margin: 10px;
 }
 
 .card-shadow{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.--c-header{
+    height: 150px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
 }
 
 .border-none{
@@ -45,7 +57,7 @@
     margin-left: 95% !important;
 }
 
-.divisa{
+.--tiny-text{
     display: inline-block;
     font-weight: 700 !important;
     font-size: 15px;

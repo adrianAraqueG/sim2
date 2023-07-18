@@ -1,57 +1,44 @@
 {
-  "departamentos": [
+  "Departamentos": [
     {
       "id": 1,
-      "nombre": "Santander"
-    }
-  ],
-  "ciudades": [
-    {
-      "id": 1,
-      "departamentoId": 1,
-      "nombre": "Bucaramanga"
-    },
-    {
-      "nombre": "123",
-      "departamentoID": 1,
-      "id": 2
-    },
-    {
-      "nombre": "1233",
-      "departamentoID": 1,
-      "id": 3
-    },
-    {
-      "nombre": "1111",
-      "departamentoID": 1,
-      "id": 4
-    },
-    {
-      "nombre": "Bucaramangas",
-      "departamentoID": 1,
-      "id": 5
-    }
-  ],
-  "inmuebles": [
-    {
-      "id": 1,
-      "ciudadId": 1,
-      "precio": "750000",
-      "habitaciones": "3",
-      "banos": "2",
-      "metros": "60",
-      "direccion": "CRA 20 # 28-28 Antonio Santos",
-      "departamentoId": "1"
+      "nomDepartamento": "Santander"
     },
     {
       "id": 2,
-      "ciudadId": 1,
-      "precio": "900000",
-      "habitaciones": "3",
-      "banos": "2",
-      "metros": "60",
-      "direccion": "Blvd. Ac. 234",
-      "departamentoId": "1"
+      "nomDepartamento": "Cundinamarca"
+    }
+  ],
+  "Ciudades": [
+    {
+      "id": 1,
+      "nomCiudad": "Bucaramanga",
+      "departamentoId": 1,
+      "imagen": "https://getvico.com/blog/wp-content/uploads/2022/09/Planes-para-hacer-en-Bucaramanga.jpg",
+      "coordenadas": {
+        "lat": 4,
+        "lon": 72
+      }
+    },
+    {
+      "id": 2,
+      "nomCiudad": "Barrancabermeja",
+      "departamentoId": 1,
+      "imagen": "https://caracoltv.brightspotcdn.com/dims4/default/bce54b2/2147483647/strip/true/crop/1000x716+0+0/resize/1000x716!/quality/90/?url=http%3A%2F%2Fcaracol-brightspot.s3.amazonaws.com%2Fca%2Fd7%2Fbd1bcf2d41e492df1556ca4b3d24%2Fbarrancabermeja.jpg",
+      "coordenadas": {
+        "lat": 4,
+        "lon": 72
+      }
+    },
+    {
+      "id": 4,
+      "nomCiudad": "Cajicá",
+      "departamentoId": 2,
+      "imagen": "https://www.estrenarvivienda.com/sites/default/files/portada_articulo_3.jpg",
+      "coordenadas": {
+        "lat": 4,
+        "lon": 72
+      }
     }
   ]
 }

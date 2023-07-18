@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.Juan Inmobiliaria</title>
+    <title>FILTRO 2</title>
     <link rel="stylesheet" href="./assets/style.css">
 
 
@@ -47,59 +47,76 @@
 
 
 
-        <!-- SHOW FLATS -->
-        <h6 class="fs-2 text-center mt-3">Gestionar Inmuebles</h6>
+        <!-- DEPARTAMENTOS -->
+        <h6 class="fs-2 text-center mt-3">Gestionar Departamentos</h6>
         <section class="container mt-4">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="show-dep">
 
+                <!-- LISTA DEPARTAMENTOS -->
                 <div class="col">
-                    <div class="card m-auto mb-3 shadow" style="width: 18rem;">
-                        <div class="mt-2 mb-2 d-flex justify-content-center flex-column align-items-center mt-3">
-                            <img src="./assets/img/casa-icono-2.png" width="150px" alt="inmueble-imagen">
-                        </div>
-                        <hr class="mb-0">
-                        <div class="card-body bgc-caro">
-                            <h5 class="card-title fs-5 mb-0">Desde $750.000 <span class="divisa">cop</span></h5>
-                            <p class="fs-6 mb-3">52mt² | 3 ha. • 2 ba.</p>
-                            <img src="./assets/img/clear.png" alt="" width="50px"><span class="divisa">20° C</span>
-                            <p class="fs-6 mb-0">Avenida 113 # 33-55</p>
-                            <span class="divisa">Bogotá, Cundinamarca.</span></h5>
-                            <div class="align-self-end me-2">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#abrir-modal"><i
-                                        class="bi bi-house-gear-fill fs-4 text-secondary me-1"></i></a>
-                                <a href=""><i class="bi bi-house-dash-fill fs-4 text-danger"></i></a>
-                            </div>
+                    <div class="d-flex justify-content-between bgc-lapiz text-light p-3 rounded">
+                        <h6 class="fs-3">Santander<br><span class="--tiny-text text-light">Ciudades: 1</span></h6>
+                        <div class="align-self-end me-2">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#abrir-modal-dep-detalles"><i
+                                    class="bi bi-pencil-square fs-4 text-light me-1"></i></a>
+                            <a href=""><i class="bi bi-trash-fill fs-4 text-light"></i></a>
                         </div>
                     </div>
                 </div>
+                
 
-                <div class="col">
-                    <div class="card m-auto mb-3 shadow" style="width: 18rem;">
-                        <div class="mt-2 mb-2 d-flex justify-content-center flex-column align-items-center mt-3">
-                            <img src="./assets/img/edificio-icono-2.png" width="116px" alt="inmueble-imagen">
-                        </div>
-                        <hr class="mb-0">
-                        <div class="card-body bgc-caro">
-                            <h5 class="card-title fs-5 mb-0">Desde $900.000 <span class="divisa">cop</span></h5>
-                            <p class="fs-6 mb-3">52mt² | 3 ha. • 2 ba.</p>
-                            <img src="./assets/img/mist.png" alt="" width="50px"><span class="divisa">20° C</span>
-                            <p class="fs-6 mb-0">Avenida 113 # 33-55</p>
-                            <span class="divisa">Medellín, Antioquia.</span></h5>
-                            <div class="me-2">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#abrir-modal"><i
-                                        class="bi bi-house-gear-fill fs-4 text-secondary me-1"></i></a>
-                                <a href=""><i class="bi bi-house-dash-fill fs-4 text-danger"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <!-- AÑADIR DEPARTAMENTOS -->
                 <div class="col d-flex justify-content-center align-items-center">
-                    <!-- ADD BUTTON -->
                     <a class="m-auto d-flex justify-content-center align-items-center" href="" data-bs-toggle="modal"
-                        data-bs-target="#abrir-modal">
-                        <div class="add-house">
-                            <i class="bi bi-house-add-fill"></i>
+                        data-bs-target="#abrir-modal-dep">
+                        <div class="add-dep">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <h6 class="fs-2 text-center mt-3">Gestionar Ciudades</h6>
+        <section class="container mt-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="show-ciudades">
+
+                <!-- CIUDADES LISTA -->
+                <div class="col">
+                    <div class="card m-auto mb-3 shadow" style="width: 18rem;">
+                        <div class="--c-header" style="background-image: url('https://getvico.com/blog/wp-content/uploads/2022/09/Planes-para-hacer-en-Bucaramanga.jpg');">
+                            
+                        </div>
+                        <hr class="m-0">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap justify-content-between p-0 m-0">
+                                <div class="">
+                                    <h5 class="fs-5 mb-0">Bucaramanga,</h5>
+                                    <p class="fs-6 mb-3">Santander</p>
+                                </div>
+                                <img src="./assets/img/clear.png" alt="" width="50px" height="50px"><span class="--tiny-text">20° C</span>
+                            </div>
+                            <div class="align-self-end me-2">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#abrir-modal-ciudad"><i
+                                        class="bi bi-building-fill-gear fs-4 text-secondary me-1"></i></a>
+                                <a href=""><i class="bi bi-building-fill-dash fs-4 text-danger"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+                <!-- BOTON AÑADIR -->
+                <div class="col d-flex justify-content-center align-items-center">
+                    <a class="m-auto d-flex justify-content-center align-items-center" href="" data-bs-toggle="modal"
+                        data-bs-target="#abrir-modal-ciudad">
+                        <div class="add-city">
+                            <i class="bi bi-building-fill-add"></i>
                         </div>
                     </a>
                 </div>
@@ -112,66 +129,98 @@
 
     <footer>
         <hr>
-        <h6 class="text-center mb-3">Campus Inmuebles 2023</h6>
+        <h6 class="text-center mb-3">Campus País 2023</h6>
     </footer>
 
 
-    <!-- MODAL EDIT / ADD -->
-    <div class="modal fade" id="abrir-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+
+
+
+
+    <!-- CIUDAD AÑADIR / EDITAR -->
+    <div class="modal fade" id="abrir-modal-ciudad" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="abrir-modal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
 
                 <div class="modal-body">
-                    <button id="cerrar-modal" type="button" class="btn-close --btn-m-close" data-bs-dismiss="modal"
+                    <button id="cerrar-modal-ciudad" type="button" class="btn-close --btn-m-close" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                     <div class="d-flex justify-content-center align-items-center">
                         <img src="./assets/img/casa-paisaje.jpg" width="200px" alt="">
-                        <h6 class="fs-4">Añadir Inmueble</h6>
+                        <h6 class="fs-4" id="modal-ciudad-title">Crear Ciudad</h6>
                     </div>
 
-                    <form action="" class="form-control border-none p-0" id="form">
+                    <form class="form-control border-none p-0" id="form-ciudad">
 
-                        <select class="form-select mt-4" id="categoria">
-                            <option value="" selected disabled>Categoria</option>
-                            <option value="Casa">Casa</option>
-                            <option value="Apartamento">Apartamento</option>
+                        <select class="form-select mt-4" id="departamentos">
+                            <option value="" selected disabled>Seleccione un departamento</option>
                         </select>
-                        <input id="precio" type="number" class="form-control mt-2" required placeholder="Precio">
-                        <input id="habitaciones" type="number" class="form-control mt-2" required
-                            placeholder="N° Habitaciones">
-                        <input id="banos" type="text" class="form-control mt-2" required placeholder="N° Baños">
-                        <input id="metros" type="text" class="form-control mt-2" required placeholder="M²">
-                        <input id="direccion" type="text" class="form-control mt-2" required placeholder="Dirección">
-                        <input id="ciudad" type="text" class="form-control mt-2" required placeholder="Ciudad">
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="nuevaCiudad">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Nueva Ciudad
-                            </label>
-                        </div>
-                        <input id="departamento" type="text" class="form-control mt-2" required
-                            placeholder="Departamento">
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="nuevoDepartamento">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Nuevo Departamento
-                            </label>
+                        <input id="nombreCiudad" type="text" class="form-control mt-2" required placeholder="Nombre">
+                        <input id="imagenUrl" type="text" class="form-control mt-2" required placeholder="URL de Imagen">
+                        <input id="lat" type="number" class="form-control mt-2" required placeholder="Latitud">
+                        <input id="lon" type="number" class="form-control mt-2" required placeholder="Longitud">
 
-                            <div class="d-grid gap-2 mt-4">
-                                <button class="btn btn-success p-2" type="submit" id="form-button">Añadir</button>
-                            </div>
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-success p-2" type="submit" id="form-button-ciudad">Crear</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- DEPARTAMENTO-->
+    <div class="modal fade" id="abrir-modal-dep" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="abrir-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button id="cerrar-modal-dep" type="button" class="btn-close --btn-m-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="./assets/img/casa-paisaje.jpg" width="200px" alt="">
+                        <h6 class="fs-4" id="modal-dep-title">Crear Departamento</h6>
+                    </div>
+
+                    <form class="form-control border-none p-0" id="form-dep">
+
+                        <input id="nombreDep" type="text" class="form-control mt-2" required placeholder="Nombre">
+
+                        <hr>
+
+                        <!-- LISTAR CIUDADES -->
+                        <div class="table-responsive">
+                            <table class="table table-striped table-dark">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="lista-ciudades">
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-success p-2" type="submit" id="form-button-dep">Crear</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- SCRIPTS -->
+    <script src="./js/app.js" type="module"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <script src="./js/app.js" type="module"></script>
+
 </body>
 
 </html>
